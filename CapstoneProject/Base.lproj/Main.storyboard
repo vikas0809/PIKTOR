@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="default-user.png" translatesAutoresizingMaskIntoConstraints="NO" id="xlU-Kw-wQ8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Circled User Male Filled-50.png" translatesAutoresizingMaskIntoConstraints="NO" id="xlU-Kw-wQ8">
                                 <frame key="frameInset" minX="37" minY="45" width="300" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -85,57 +85,44 @@
                         <viewControllerLayoutGuide type="top" id="bs3-hm-tfZ"/>
                         <viewControllerLayoutGuide type="bottom" id="4aE-nQ-3O7"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFit" semanticContentAttribute="playback" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cov-Xm-yuR">
-                                <frame key="frameInset" minX="56" minY="337" width="254" height="37"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cov-Xm-yuR">
+                                <frame key="frameInset" minX="61" minY="325" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93130606412887573" green="0.92110061645507812" blue="0.83987051248550415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.97773438692092896" green="0.95681995153427124" blue="0.91192477941513062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osY-6h-8FZ">
-                                <frame key="frameInset" minX="56" minY="390" width="254" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8k-F9-6cm"/>
-                                    <segue destination="vGD-Bg-ymm" kind="show" id="BMg-z5-wkQ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="--- OR ---" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZD-kP-e5u">
-                                <frame key="frameInset" minX="142" minY="448" width="82" height="28"/>
+                                <frame key="frameInset" minX="147" minY="474" width="82" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="bezel" placeholder="username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Se1-uZ-7XD">
-                                <frame key="frameInset" minX="56" minY="284" width="254" height="37"/>
+                            <textField clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Se1-uZ-7XD">
+                                <frame key="frameInset" minX="61" minY="285" width="250" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93130606412887573" green="0.92110061645507812" blue="0.83987051248550415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.97773438692092896" green="0.95681995153427124" blue="0.91192477941513062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asu-tY-YLc">
-                                <frame key="frameInset" minX="75" minY="477" width="227" height="45"/>
+                                <frame key="frameInset" minX="61" minY="513" width="115" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.65000000000000002" width="1" height="1"/>
-                                <state key="normal" image="loginfb.png"/>
+                                <state key="normal" image="fbsmall.png"/>
                                 <connections>
                                     <action selector="facebookLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehe-uq-CUI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="955-kN-6Lq">
-                                <frame key="frameInset" minX="239" minY="623" width="63" height="24"/>
+                                <frame key="frameInset" minX="242" minY="623" width="63" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Sign Up!"/>
@@ -144,16 +131,34 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BUv-Xq-f46">
-                                <frame key="frameInset" minX="64" minY="625" width="174" height="21"/>
+                                <frame key="frameInset" minX="67" minY="625" width="174" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="writing-1.gif" translatesAutoresizingMaskIntoConstraints="NO" id="jxT-a6-RXK">
-                                <frame key="frameInset" minX="64" minY="105" width="240" height="161"/>
+                                <frame key="frameInset" minX="69" minY="105" width="240" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osY-6h-8FZ">
+                                <frame key="frameInset" minX="61" minY="375" width="250" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8k-F9-6cm"/>
+                                    <segue destination="vGD-Bg-ymm" kind="show" id="BMg-z5-wkQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBW-NF-DvK">
+                                <frame key="frameInset" minX="190" minY="508" width="115" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="google_signin.png"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93130606412887573" green="0.92110061645507812" blue="0.83987051248550415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -597,8 +602,8 @@
         <image name="Screenshot-40.png" width="40" height="40"/>
         <image name="Settings Filled-50.png" width="50" height="50"/>
         <image name="Share-35.png" width="35" height="35"/>
-        <image name="default-user.png" width="502" height="502"/>
-        <image name="loginfb.png" width="713" height="151"/>
+        <image name="fbsmall.png" width="100" height="46"/>
+        <image name="google_signin.png" width="382" height="92"/>
         <image name="writing-1.gif" width="460" height="345"/>
     </resources>
     <inferredMetricsTieBreakers>
