@@ -151,7 +151,6 @@
                                 </state>
                                 <connections>
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G8k-F9-6cm"/>
-                                    <segue destination="vGD-Bg-ymm" kind="show" id="BMg-z5-wkQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBW-NF-DvK">
@@ -606,7 +605,6 @@
         <image name="writing-1.gif" width="460" height="345"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BMg-z5-wkQ"/>
         <segue reference="vDE-3R-Iie"/>
     </inferredMetricsTieBreakers>
 </document>

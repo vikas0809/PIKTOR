@@ -24,7 +24,12 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
+@property (weak, nonatomic) NSString *fullName;
+@property (weak, nonatomic) NSString *facebookID;
+@property (weak, nonatomic) NSString *emailID;
+@property (weak, nonatomic) NSString *profilePicURL;
 
+-(void) getUserDetails : (void (^)(void))callbackFunction;
 
 @end
 
