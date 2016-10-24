@@ -98,7 +98,44 @@ FBSDKLoginManager *login;
     }
     else
     {
-       
+            
+        NSString *post = [NSString stringWithFormat:@"action=%@&emailAddress=%@&password=%@", @"doLogin",_emailField.text, _passwordField.text];
+        
+        NSLog(@"Post Data : %@", post);
+        
+        NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
+        
+        NSString *postLength = [NSString stringWithFormat:@"%d", [postData length]];
+        
+        NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+        
+        [request setURL:[NSURL URLWithString:@"http://www.bmtool.us/piktor/handlers.php"]];
+        [request setHTTPMethod:@"POST"];
+        [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+        [request setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
+        [request setHTTPBody:postData];
+        
+        
+        // Send a synchronous request
+        NSHTTPURLResponse * response = nil;
+        NSError * error = nil;
+        
+        NSData * data = [NSURLConnection sendSynchronousRequest:request
+                                              returningResponse:&response
+                                                          error:&error];
+        
+        NSLog(@"Response code : %d", [response statusCode]);
+        
+        NSLog(@"error  = %@", error);
+        
+        if (error == nil)
+        {
+            // Parse data here
+            NSString *responseData = [[NSString alloc] initWithData:data encoding: NSUTF8StringEncoding];
+            NSLog(@"responseData = %@", responseData);
+        }
+        
+        
     }
 }
 

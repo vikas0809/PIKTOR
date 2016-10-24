@@ -110,13 +110,13 @@
                                 <color key="backgroundColor" red="0.97773438692092896" green="0.95681995153427124" blue="0.91192477941513062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="asu-tY-YLc">
                                 <frame key="frameInset" minX="61" minY="513" width="115" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <rect key="contentStretch" x="0.0" y="0.65000000000000002" width="1" height="1"/>
-                                <state key="normal" image="fbsmall.png"/>
+                                <state key="normal" image="loginfb.png"/>
                                 <connections>
                                     <action selector="facebookLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ehe-uq-CUI"/>
                                 </connections>
@@ -157,7 +157,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QBW-NF-DvK">
                                 <frame key="frameInset" minX="190" minY="508" width="115" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="google_signin.png"/>
+                                <state key="normal" image="loginfb.png"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.93130606412887573" green="0.92110061645507812" blue="0.83987051248550415" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -602,8 +602,7 @@
         <image name="Screenshot-40.png" width="40" height="40"/>
         <image name="Settings Filled-50.png" width="50" height="50"/>
         <image name="Share-35.png" width="35" height="35"/>
-        <image name="fbsmall.png" width="100" height="46"/>
-        <image name="google_signin.png" width="382" height="92"/>
+        <image name="loginfb.png" width="713" height="151"/>
         <image name="writing-1.gif" width="460" height="345"/>
     </resources>
     <inferredMetricsTieBreakers>
