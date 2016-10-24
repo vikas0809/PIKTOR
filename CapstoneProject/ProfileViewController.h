@@ -23,4 +23,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *email;
 
+@property (weak, nonatomic) NSString *userID;
+
 @end

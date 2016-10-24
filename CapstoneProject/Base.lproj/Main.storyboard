@@ -435,7 +435,7 @@
                                         <barButtonItem key="rightBarButtonItem" image="Circled User Male Filled-50.png" id="M1T-V6-Js9">
                                             <inset key="imageInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-5"/>
                                             <connections>
-                                                <segue destination="U9I-bQ-I4v" kind="presentation" id="ubw-wC-RkL"/>
+                                                <segue destination="U9I-bQ-I4v" kind="showDetail" id="ubw-wC-RkL"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -605,6 +605,6 @@
         <image name="writing-1.gif" width="460" height="345"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vDE-3R-Iie"/>
+        <segue reference="ubw-wC-RkL"/>
     </inferredMetricsTieBreakers>
 </document>

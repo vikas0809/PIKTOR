@@ -16,12 +16,40 @@
 
 @end
 
+ViewController *mV;
+
 @implementation ProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    
+    
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    
+    _fullName.text = [defaults stringForKey:@"fullName"];
+    _email.text    = [defaults stringForKey:@"emailID"];
+    _userID        = [defaults stringForKey:@"userID"];
+    
+    if(_userID == nil || [_userID isEqualToString: @"nil"] || [_userID isEqual:[NSNull null]] )
+    {
+        mV = [[ViewController alloc] init];
+        
+        [mV getUserDetails : ^{
+            _fullName.text  = mV.fullName;
+            _email.text     = mV.emailID;
+        
+            NSData *imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:mV.profilePicURL]];
+        
+            _profilePic.image = [UIImage imageWithData:imageData];
+        
+        }];
+    
+    }
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -36,19 +64,24 @@
     if (![FBSDKAccessToken currentAccessToken]) {
         UIViewController *tbc = [self.storyboard instantiateViewControllerWithIdentifier:@"loginMain"];
         
+        NSDictionary *defaultsDictionary = [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];
+        for (NSString *key in [defaultsDictionary allKeys]) {
+            [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
+        }
+        
         [self presentViewController:tbc animated:YES completion:nil];
     }
-
+    
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 @end

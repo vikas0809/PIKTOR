@@ -51,6 +51,15 @@ FBSDKLoginManager *login;
                  _emailID    = [result objectForKey: @"email"];
                  _profilePicURL = [[[result objectForKey: @"picture"] objectForKey: @"data"] objectForKey: @"url"];
                  
+                 NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                 [defaults setValue:_facebookID forKey:@"facebookID"];
+                 [defaults setValue:_fullName forKey:@"fullName"];
+                 [defaults setValue:_emailID forKey:@"emailID"];
+                 [defaults setValue:_profilePicURL forKey:@"profilePicURL"];
+                 [defaults setValue:@"nil" forKey:@"userID"];
+                 
+                 [defaults synchronize];
+                 
                  NSLog(@"Result = %@",[[[result objectForKey: @"picture"] objectForKey: @"data"] objectForKey: @"url"]);
                  
                  // NSLog(@" profile pic : %@",[pic objectForKey: @"data"]);
@@ -117,7 +126,6 @@ FBSDKLoginManager *login;
         
         NSLog(@"result - %@",result);
         
-        NSArray *resultArray;
         
         NSData* data = [result dataUsingEncoding:NSUTF8StringEncoding];
         NSArray *values = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];  // if you are expecting  the JSON string to be in form of array else use NSDictionary instead
@@ -128,6 +136,16 @@ FBSDKLoginManager *login;
             _facebookID = [values valueForKey:@"facebookID"];
             _fullName   = [NSString stringWithFormat:@"%@ %@", [values valueForKey:@"firstName"], [values valueForKey:@"lastName"]];
             _emailID    = [values valueForKey: @"emailAddress"];
+            _userID     = [values valueForKey:@"userID"];
+            
+            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+            [defaults setValue:_facebookID forKey:@"facebookID"];
+            [defaults setValue:_fullName forKey:@"fullName"];
+            [defaults setValue:_emailID forKey:@"emailID"];
+            [defaults setValue:_profilePicURL forKey:@"profilePicURL"];
+            [defaults setValue:@"nill" forKey:@"userID"];
+            
+            [defaults synchronize];
             
             //show app main page
             [self loggedIn];

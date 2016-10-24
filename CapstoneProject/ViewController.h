@@ -28,6 +28,8 @@
 @property (weak, nonatomic) NSString *facebookID;
 @property (weak, nonatomic) NSString *emailID;
 @property (weak, nonatomic) NSString *profilePicURL;
+@property (weak, nonatomic) NSString *userID;
+
 
 -(void) getUserDetails : (void (^)(void))callbackFunction;
 
