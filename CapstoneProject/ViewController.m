@@ -31,19 +31,30 @@ FBSDKLoginManager *login;
     //obscure password field
     _passwordField.secureTextEntry = YES;
     
-    
+    [self getUserDetails : ^{}];
 }
 
--(void) getUserDetails
+-(void) getUserDetails : (void (^)(void))callbackFunction
 {
     FBSDKAccessToken* access_token =[FBSDKAccessToken currentAccessToken];
     NSLog(@"Access Token, %@",access_token);
     
     if ([FBSDKAccessToken currentAccessToken]) {
-        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:nil]
+        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:@{@"fields": @"email,name,picture.height(800).width(800)"}]
          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
              if (!error) {
                  NSLog(@"fetched user:%@", result);
+                 
+                 
+                 _facebookID = [result objectForKey:@"id"];
+                 _fullName   = [result objectForKey: @"name"];
+                 _emailID    = [result objectForKey: @"email"];
+                 _profilePicURL = [[[result objectForKey: @"picture"] objectForKey: @"data"] objectForKey: @"url"];
+                 
+                 NSLog(@"Result = %@",[[[result objectForKey: @"picture"] objectForKey: @"data"] objectForKey: @"url"]);
+                 
+                 // NSLog(@" profile pic : %@",[pic objectForKey: @"data"]);
+                 callbackFunction();
              }
          }];
     }
@@ -59,22 +70,23 @@ FBSDKLoginManager *login;
 -(void)loginButtonClicked
 {
     if (![FBSDKAccessToken currentAccessToken]) {
-    login = [[FBSDKLoginManager alloc] init];
-    
-    [login
-     logInWithReadPermissions: @[@"public_profile", @"email", @"user_friends"]
-     fromViewController:self
-     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
-         if (error) {
-             NSLog(@"%@",[error localizedDescription]);
-             NSLog(@"Process error");
-         } else if (result.isCancelled) {
-             NSLog(@"Cancelled");
-         } else {
-             NSLog(@"Logged in");
-             [self loggedIn];
-         }
-     }];
+        login = [[FBSDKLoginManager alloc] init];
+        
+        [login
+         logInWithReadPermissions: @[@"public_profile", @"email", @"user_friends"]
+         fromViewController:self
+         handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+             if (error) {
+                 NSLog(@"%@",[error localizedDescription]);
+                 NSLog(@"Process error");
+                 [self loggedIn];
+             } else if (result.isCancelled) {
+                 NSLog(@"Cancelled");
+             } else {
+                 NSLog(@"Logged in");
+                 [self loggedIn];
+             }
+         }];
     }
     else
     {
@@ -102,7 +114,30 @@ FBSDKLoginManager *login;
         NSString *post = [NSString stringWithFormat:@"action=%@&emailAddress=%@&password=%@", @"doLogin",_emailField.text, _passwordField.text];
         
         NSString *result = [self doConnect: post];
-        [self loggedIn];
+        
+        NSLog(@"result - %@",result);
+        
+        NSArray *resultArray;
+        
+        NSData* data = [result dataUsingEncoding:NSUTF8StringEncoding];
+        NSArray *values = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];  // if you are expecting  the JSON string to be in form of array else use NSDictionary instead
+        
+        NSLog(@"userID - %@",[values valueForKey:@"userID"]);
+        if([_emailField.text isEqualToString: [values valueForKey:@"emailAddress"]])
+        {
+            _facebookID = [values valueForKey:@"facebookID"];
+            _fullName   = [NSString stringWithFormat:@"%@ %@", [values valueForKey:@"firstName"], [values valueForKey:@"lastName"]];
+            _emailID    = [values valueForKey: @"emailAddress"];
+            
+            //show app main page
+            [self loggedIn];
+        }
+        else
+        {
+            UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Login Error" message:@"Oops! The username and password provided couldn't be validated." delegate:self cancelButtonTitle: @"OK"otherButtonTitles: nil];
+            
+            [error show];
+        }
     }
 }
 
@@ -139,7 +174,7 @@ FBSDKLoginManager *login;
     {
         // Parse data here
         NSString *responseData = [[NSString alloc] initWithData:data encoding: NSUTF8StringEncoding];
-        NSLog(@"responseData = %@", responseData);
+       // NSLog(@"responseData = %@", responseData);
         return responseData;
     }
     
