@@ -10,6 +10,7 @@
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import "ViewController.h"
 
+
 @interface AppDelegate ()
 
 @end
@@ -22,14 +23,18 @@
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    
+    //facebook login handler
     [[FBSDKApplicationDelegate sharedInstance] application:application
                              didFinishLaunchingWithOptions:launchOptions];
-    // Add any custom logic here.
+    //CUSTOM LOGIC--------------------
     
-    if ([FBSDKAccessToken currentAccessToken]) {
+    NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+    
+    NSString *uID = [defaults stringForKey:@"userID"];
+    
+    if ([FBSDKAccessToken currentAccessToken] || (uID != nil && ![uID isEqualToString: @"nil"] && ![uID isEqual:[NSNull null]])) {
         // User is logged in, do work such as go to next view controller.
-        NSLog(@"Already logged");
+        NSLog(@"Already logged %@", uID);
         
         //redirect to app homepage
         UIStoryboard *storyboard = self.window.rootViewController.storyboard;
@@ -38,6 +43,9 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
         [self.window makeKeyAndVisible];
         
     }
+    
+    
+    //google login handler
     
     return YES;
 }
@@ -50,9 +58,13 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
                                                         sourceApplication:sourceApplication
                                                                annotation:annotation
                     ];
+    
+
     // Add any custom logic here.
     return handled;
-} 
+}
+
+
 
 
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0BD4411DBE6AA700E0D77F /* fbsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD43F1DBE6AA700E0D77F /* fbsmall.png */; };
+		3F0BD4421DBE6AA700E0D77F /* google_signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4401DBE6AA700E0D77F /* google_signin.png */; };
+		3F0BD4461DBE70BA00E0D77F /* facebook-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4431DBE70BA00E0D77F /* facebook-round.png */; };
+		3F0BD4471DBE70BA00E0D77F /* googleplus-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4441DBE70BA00E0D77F /* googleplus-round.png */; };
+		3F0BD4481DBE70BA00E0D77F /* twitter-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4451DBE70BA00E0D77F /* twitter-round.png */; };
 		3F29AECD1DB014AA00FD906F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29AECC1DB014AA00FD906F /* main.m */; };
 		3F29AED01DB014AA00FD906F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29AECF1DB014AA00FD906F /* AppDelegate.m */; };
 		3F29AED31DB014AA00FD906F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29AED21DB014AA00FD906F /* ViewController.m */; };
@@ -18,6 +23,7 @@
 		3F808A071DB695230023ABFD /* shareTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F808A061DB695230023ABFD /* shareTabController.m */; };
 		3F808A0F1DB699DD0023ABFD /* documentTabControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F808A0E1DB699DD0023ABFD /* documentTabControllerViewController.m */; };
 		3F808A141DB6D7090023ABFD /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F808A131DB6D7090023ABFD /* ProfileViewController.m */; };
+		3FB4D4C21DC13B59001E5F7B /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4D4C11DC13B59001E5F7B /* RegistrationViewController.m */; };
 		3FC3F0A81DB4464200796CF7 /* Circled User Male Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3F0A71DB4464200796CF7 /* Circled User Male Filled-50.png */; };
 		3FC3F0AD1DB447FC00796CF7 /* Clouds-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3F0A91DB447FC00796CF7 /* Clouds-50.png */; };
 		3FC3F0AE1DB447FC00796CF7 /* Download From Cloud-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3F0AA1DB447FC00796CF7 /* Download From Cloud-50.png */; };
@@ -31,6 +37,16 @@
 		3FC3F0C41DB4515E00796CF7 /* Add Folder-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3F0C31DB4515E00796CF7 /* Add Folder-40.png */; };
 		3FC3F0C71DB4521600796CF7 /* Screenshot-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3F0C51DB4521600796CF7 /* Screenshot-40.png */; };
 		3FC3F0CA1DB4529E00796CF7 /* Share-35.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3F0C91DB4529E00796CF7 /* Share-35.png */; };
+		3FC7573B1DC7AD19003E78D9 /* GoogleAppUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757361DC7AD19003E78D9 /* GoogleAppUtilities.framework */; };
+		3FC7573C1DC7AD19003E78D9 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3FC757371DC7AD19003E78D9 /* GoogleSignIn.bundle */; };
+		3FC7573D1DC7AD19003E78D9 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757381DC7AD19003E78D9 /* GoogleSignIn.framework */; };
+		3FC7573E1DC7AD19003E78D9 /* GoogleSignInDependencies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757391DC7AD19003E78D9 /* GoogleSignInDependencies.framework */; };
+		3FC7573F1DC7AD19003E78D9 /* GoogleSymbolUtilities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC7573A1DC7AD19003E78D9 /* GoogleSymbolUtilities.framework */; };
+		3FC757411DC7ADB3003E78D9 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757401DC7ADB3003E78D9 /* AddressBook.framework */; };
+		3FC757441DC7ADD0003E78D9 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757421DC7ADD0003E78D9 /* StoreKit.framework */; };
+		3FC757451DC7ADD0003E78D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757431DC7ADD0003E78D9 /* SystemConfiguration.framework */; };
+		3FC757471DC7AE0C003E78D9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757461DC7AE0C003E78D9 /* libz.tbd */; };
+		3FC757491DC7AE35003E78D9 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757481DC7AE35003E78D9 /* SafariServices.framework */; };
 		3FE334A81DB535CC00E4C425 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE334A71DB535CC00E4C425 /* FBSDKCoreKit.framework */; };
 		3FE334AA1DB5391B00E4C425 /* Bolts in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE334A91DB5391B00E4C425 /* Bolts */; };
 		3FE334AC1DB5393000E4C425 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE334AB1DB5393000E4C425 /* Bolts.framework */; };
@@ -61,6 +77,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0BD43F1DBE6AA700E0D77F /* fbsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fbsmall.png; path = ../../../Downloads/fbsmall.png; sourceTree = "<group>"; };
+		3F0BD4401DBE6AA700E0D77F /* google_signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = google_signin.png; path = ../../../Downloads/google_signin.png; sourceTree = "<group>"; };
+		3F0BD4431DBE70BA00E0D77F /* facebook-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook-round.png"; path = "../../../Downloads/facebook-round.png"; sourceTree = "<group>"; };
+		3F0BD4441DBE70BA00E0D77F /* googleplus-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "googleplus-round.png"; path = "../../../Downloads/googleplus-round.png"; sourceTree = "<group>"; };
+		3F0BD4451DBE70BA00E0D77F /* twitter-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter-round.png"; path = "../../../Downloads/twitter-round.png"; sourceTree = "<group>"; };
 		3F29AEC81DB014AA00FD906F /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29AECC1DB014AA00FD906F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F29AECE1DB014AA00FD906F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +104,8 @@
 		3F808A0E1DB699DD0023ABFD /* documentTabControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = documentTabControllerViewController.m; sourceTree = "<group>"; };
 		3F808A121DB6D7090023ABFD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		3F808A131DB6D7090023ABFD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		3FB4D4C01DC13B59001E5F7B /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
+		3FB4D4C11DC13B59001E5F7B /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
 		3FC3F0A71DB4464200796CF7 /* Circled User Male Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Circled User Male Filled-50.png"; path = "../../../Downloads/Circled User Male Filled-50.png"; sourceTree = "<group>"; };
 		3FC3F0A91DB447FC00796CF7 /* Clouds-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Clouds-50.png"; path = "../../../Downloads/Clouds-50.png"; sourceTree = "<group>"; };
 		3FC3F0AA1DB447FC00796CF7 /* Download From Cloud-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Download From Cloud-50.png"; path = "../../../Downloads/Download From Cloud-50.png"; sourceTree = "<group>"; };
@@ -96,6 +119,16 @@
 		3FC3F0C31DB4515E00796CF7 /* Add Folder-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Add Folder-40.png"; path = "../../../Downloads/Add Folder-40.png"; sourceTree = "<group>"; };
 		3FC3F0C51DB4521600796CF7 /* Screenshot-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot-40.png"; path = "../../../Downloads/Screenshot-40.png"; sourceTree = "<group>"; };
 		3FC3F0C91DB4529E00796CF7 /* Share-35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Share-35.png"; path = "../../../Downloads/Share-35.png"; sourceTree = "<group>"; };
+		3FC757361DC7AD19003E78D9 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		3FC757371DC7AD19003E78D9 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		3FC757381DC7AD19003E78D9 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		3FC757391DC7AD19003E78D9 /* GoogleSignInDependencies.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignInDependencies.framework; sourceTree = "<group>"; };
+		3FC7573A1DC7AD19003E78D9 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		3FC757401DC7ADB3003E78D9 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		3FC757421DC7ADD0003E78D9 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		3FC757431DC7ADD0003E78D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3FC757461DC7AE0C003E78D9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3FC757481DC7AE35003E78D9 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		3FE334A71DB535CC00E4C425 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		3FE334A91DB5391B00E4C425 /* Bolts */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Bolts; sourceTree = "<group>"; };
 		3FE334AB1DB5393000E4C425 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -113,21 +146,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FC757491DC7AE35003E78D9 /* SafariServices.framework in Frameworks */,
+				3FC757471DC7AE0C003E78D9 /* libz.tbd in Frameworks */,
+				3FC757441DC7ADD0003E78D9 /* StoreKit.framework in Frameworks */,
+				3FC757451DC7ADD0003E78D9 /* SystemConfiguration.framework in Frameworks */,
+				3FC757411DC7ADB3003E78D9 /* AddressBook.framework in Frameworks */,
 				3FE334AE1DB53A1A00E4C425 /* FBSDKLoginKit.framework in Frameworks */,
+				3FC7573E1DC7AD19003E78D9 /* GoogleSignInDependencies.framework in Frameworks */,
+				3FC7573F1DC7AD19003E78D9 /* GoogleSymbolUtilities.framework in Frameworks */,
+				3FC7573D1DC7AD19003E78D9 /* GoogleSignIn.framework in Frameworks */,
+				3FC7573B1DC7AD19003E78D9 /* GoogleAppUtilities.framework in Frameworks */,
 				3FE334AC1DB5393000E4C425 /* Bolts.framework in Frameworks */,
 				3FE334A81DB535CC00E4C425 /* FBSDKCoreKit.framework in Frameworks */,
 				3FE334AA1DB5391B00E4C425 /* Bolts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F29AEDE1DB014AA00FD906F /* Frameworks */ = {
+		3F29AEE91DB014AA00FD906F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3F29AEE91DB014AA00FD906F /* Frameworks */ = {
+		98ED947454FF9B263EA5CC4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -168,6 +210,8 @@
 				3F808A061DB695230023ABFD /* shareTabController.m */,
 				3F808A081DB695400023ABFD /* shareTabController.h */,
 				3F29AED41DB014AA00FD906F /* Main.storyboard */,
+				3FB4D4C01DC13B59001E5F7B /* RegistrationViewController.h */,
+				3FB4D4C11DC13B59001E5F7B /* RegistrationViewController.m */,
 				3F808A121DB6D7090023ABFD /* ProfileViewController.h */,
 				3F808A131DB6D7090023ABFD /* ProfileViewController.m */,
 				3F808A0D1DB699DD0023ABFD /* documentTabControllerViewController.h */,
@@ -183,6 +227,11 @@
 		3F29AECB1DB014AA00FD906F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F0BD4431DBE70BA00E0D77F /* facebook-round.png */,
+				3F0BD4441DBE70BA00E0D77F /* googleplus-round.png */,
+				3F0BD4451DBE70BA00E0D77F /* twitter-round.png */,
+				3F0BD43F1DBE6AA700E0D77F /* fbsmall.png */,
+				3F0BD4401DBE6AA700E0D77F /* google_signin.png */,
 				3FC3F0C91DB4529E00796CF7 /* Share-35.png */,
 				3FFEEEBB1DB94AF600C30C41 /* facebook-sign-in-button-png-26.png */,
 				3FC3F0C51DB4521600796CF7 /* Screenshot-40.png */,
@@ -228,6 +277,16 @@
 		3FE3349C1DB5312800E4C425 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3FC757481DC7AE35003E78D9 /* SafariServices.framework */,
+				3FC757461DC7AE0C003E78D9 /* libz.tbd */,
+				3FC757421DC7ADD0003E78D9 /* StoreKit.framework */,
+				3FC757431DC7ADD0003E78D9 /* SystemConfiguration.framework */,
+				3FC757401DC7ADB3003E78D9 /* AddressBook.framework */,
+				3FC757361DC7AD19003E78D9 /* GoogleAppUtilities.framework */,
+				3FC757371DC7AD19003E78D9 /* GoogleSignIn.bundle */,
+				3FC757381DC7AD19003E78D9 /* GoogleSignIn.framework */,
+				3FC757391DC7AD19003E78D9 /* GoogleSignInDependencies.framework */,
+				3FC7573A1DC7AD19003E78D9 /* GoogleSymbolUtilities.framework */,
 				3FE334AD1DB53A1A00E4C425 /* FBSDKLoginKit.framework */,
 				3FE334AB1DB5393000E4C425 /* Bolts.framework */,
 				3FE334A91DB5391B00E4C425 /* Bolts */,
@@ -261,8 +320,8 @@
 			buildConfigurationList = 3F29AEF81DB014AB00FD906F /* Build configuration list for PBXNativeTarget "CapstoneProjectTests" */;
 			buildPhases = (
 				3F29AEDD1DB014AA00FD906F /* Sources */,
-				3F29AEDE1DB014AA00FD906F /* Frameworks */,
 				3F29AEDF1DB014AA00FD906F /* Resources */,
+				98ED947454FF9B263EA5CC4C /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -351,16 +410,22 @@
 				3FC3F0BC1DB44BF200796CF7 /* Add Folder-96.png in Resources */,
 				3FC3F0C21DB44E0A00796CF7 /* Pictures Folder-96.png in Resources */,
 				3FC3F0C71DB4521600796CF7 /* Screenshot-40.png in Resources */,
+				3F0BD4421DBE6AA700E0D77F /* google_signin.png in Resources */,
 				3F29AED81DB014AA00FD906F /* Assets.xcassets in Resources */,
 				3FC3F0CA1DB4529E00796CF7 /* Share-35.png in Resources */,
 				3FC3F0C41DB4515E00796CF7 /* Add Folder-40.png in Resources */,
+				3FC7573C1DC7AD19003E78D9 /* GoogleSignIn.bundle in Resources */,
 				3FE632EB1DB3524400686293 /* user-photo.png in Resources */,
 				3FC3F0BA1DB44BF200796CF7 /* Add Folder-48.png in Resources */,
 				3FE632E31DB315E300686293 /* eureka.jpg in Resources */,
+				3F0BD4471DBE70BA00E0D77F /* googleplus-round.png in Resources */,
+				3F0BD4461DBE70BA00E0D77F /* facebook-round.png in Resources */,
+				3F0BD4481DBE70BA00E0D77F /* twitter-round.png in Resources */,
 				3FC3F0C01DB44E0A00796CF7 /* Folder-96.png in Resources */,
 				3FC3F0AD1DB447FC00796CF7 /* Clouds-50.png in Resources */,
 				3FC3F0C11DB44E0A00796CF7 /* Open Folder-96.png in Resources */,
 				3FE632E41DB315E300686293 /* projectwrite.png in Resources */,
+				3F0BD4411DBE6AA700E0D77F /* fbsmall.png in Resources */,
 				3FC3F0B01DB447FC00796CF7 /* Upload to Cloud-50.png in Resources */,
 				3F29AED61DB014AA00FD906F /* Main.storyboard in Resources */,
 				3FE632E51DB315E300686293 /* writing-1.gif in Resources */,
@@ -395,6 +460,7 @@
 				3F808A071DB695230023ABFD /* shareTabController.m in Sources */,
 				3F808A141DB6D7090023ABFD /* ProfileViewController.m in Sources */,
 				3F29AECD1DB014AA00FD906F /* main.m in Sources */,
+				3FB4D4C21DC13B59001E5F7B /* RegistrationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

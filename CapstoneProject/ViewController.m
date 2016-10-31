@@ -28,10 +28,9 @@ FBSDKLoginManager *login;
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    //obscure password field
-    _passwordField.secureTextEntry = YES;
-    
     [self getUserDetails : ^{}];
+    
+    
 }
 
 -(void) getUserDetails : (void (^)(void))callbackFunction
@@ -62,20 +61,45 @@ FBSDKLoginManager *login;
                  
                  NSLog(@"Result = %@",[[[result objectForKey: @"picture"] objectForKey: @"data"] objectForKey: @"url"]);
                  
-                 // NSLog(@" profile pic : %@",[pic objectForKey: @"data"]);
+                 //Create Account in Database or update facebook id
+                 
+                 
+                 
                  callbackFunction();
              }
          }];
     }
 }
 
+- (IBAction)googleLoginButtonhdlr:(UIButton *)sender {
+    
+}
+
+/*
+- (void)signIn:(GIDSignIn *)signIn
+didSignInForUser:(GIDGoogleUser *)user
+     withError:(NSError *)error {
+    
+    // Perform any operations on signed in user here.
+    NSString *userId = user.userID;                  // For client-side use only!
+    NSString *idToken = user.authentication.idToken; // Safe to send to the server
+    NSString *fullName = user.profile.name;
+    NSString *givenName = user.profile.givenName;
+    NSString *familyName = user.profile.familyName;
+    NSString *email = user.profile.email;
+}
+*/
+
 - (IBAction)facebookLoginButton:(UIButton *)sender {
     
     [self loginButtonClicked];
 }
 
+- (IBAction)passwordEntered:(id)sender {
+    [self processLogin];
+}
 
-// Once the button is clicked, show the login dialog
+// Once the facebook button is clicked, show the login dialog
 -(void)loginButtonClicked
 {
     if (![FBSDKAccessToken currentAccessToken]) {
@@ -87,9 +111,7 @@ FBSDKLoginManager *login;
          handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
              if (error) {
                  NSLog(@"%@",[error localizedDescription]);
-                 NSLog(@"Process error");
-                 [self loggedIn];
-             } else if (result.isCancelled) {
+                 NSLog(@"Process error");             } else if (result.isCancelled) {
                  NSLog(@"Cancelled");
              } else {
                  NSLog(@"Logged in");
@@ -111,6 +133,11 @@ FBSDKLoginManager *login;
 }
 
 - (IBAction)login:(id)sender {
+    [self processLogin];
+}
+
+-(void) processLogin
+{
     if([_emailField.text isEqualToString:@""] || [_passwordField.text isEqualToString:@""])
     {
         UIAlertView *error = [[UIAlertView alloc] initWithTitle:@"Validation Error" message:@"Please enter a valid username and password." delegate:self cancelButtonTitle: @"OK"otherButtonTitles: nil];
@@ -119,7 +146,7 @@ FBSDKLoginManager *login;
     }
     else
     {
-            
+        
         NSString *post = [NSString stringWithFormat:@"action=%@&emailAddress=%@&password=%@", @"doLogin",_emailField.text, _passwordField.text];
         
         NSString *result = [self doConnect: post];
@@ -133,22 +160,15 @@ FBSDKLoginManager *login;
         NSLog(@"userID - %@",[values valueForKey:@"userID"]);
         if([_emailField.text isEqualToString: [values valueForKey:@"emailAddress"]])
         {
-            _facebookID = [values valueForKey:@"facebookID"];
-            _fullName   = [NSString stringWithFormat:@"%@ %@", [values valueForKey:@"firstName"], [values valueForKey:@"lastName"]];
-            _emailID    = [values valueForKey: @"emailAddress"];
-            _userID     = [values valueForKey:@"userID"];
+            //reset password field
+            _passwordField.text = @"";
+            _emailField.text = @"";
             
-            NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-            [defaults setValue:_facebookID forKey:@"facebookID"];
-            [defaults setValue:_fullName forKey:@"fullName"];
-            [defaults setValue:_emailID forKey:@"emailID"];
-            [defaults setValue:_profilePicURL forKey:@"profilePicURL"];
-            [defaults setValue:@"nill" forKey:@"userID"];
-            
-            [defaults synchronize];
+            [self saveDetailsTocookie : values];
             
             //show app main page
             [self loggedIn];
+
         }
         else
         {
@@ -158,6 +178,26 @@ FBSDKLoginManager *login;
         }
     }
 }
+
+-(void) saveDetailsTocookie : (NSArray *)values
+{
+    _facebookID = [values valueForKey:@"facebookID"];
+    _fullName   = [NSString stringWithFormat:@"%@ %@", [values valueForKey:@"firstName"], [values valueForKey:@"lastName"]];
+    _emailID    = [values valueForKey: @"emailAddress"];
+    _userID     = [values valueForKey:@"userID"];
+    
+    NSLog(@"userID --- %@", _userID);
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setValue:_facebookID forKey:@"facebookID"];
+    
+    [defaults setValue:_fullName forKey:@"fullName"];
+    [defaults setValue:_emailID forKey:@"emailID"];
+    [defaults setValue:_profilePicURL forKey:@"profilePicURL"];
+    
+    [defaults setValue:_userID forKey:@"userID"];
+    
+    [defaults synchronize];}
 
 -(NSString *)doConnect: (NSString *)postValues
 {
@@ -203,6 +243,11 @@ FBSDKLoginManager *login;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+- (IBAction)googleLoginButton:(UIButton *)sender {
+}
+
 
 
 @end

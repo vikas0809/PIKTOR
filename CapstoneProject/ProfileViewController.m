@@ -57,21 +57,43 @@ ViewController *mV;
 }
 
 - (IBAction)doLogout:(UIButton *)sender {
-    FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
-    [loginManager logOut];
     
+    if ([FBSDKAccessToken currentAccessToken])
+    {
+        FBSDKLoginManager *loginManager = [[FBSDKLoginManager alloc] init];
+        [loginManager logOut];
+    }
     
     if (![FBSDKAccessToken currentAccessToken]) {
+        
+        [self resetDefaults];
+        
+        //[self dismissModalStack];
+    
+        //show view controller
         UIViewController *tbc = [self.storyboard instantiateViewControllerWithIdentifier:@"loginMain"];
-        
-        NSDictionary *defaultsDictionary = [[NSUserDefaults standardUserDefaults] dictionaryRepresentation];
-        for (NSString *key in [defaultsDictionary allKeys]) {
-            [[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
-        }
-        
         [self presentViewController:tbc animated:YES completion:nil];
     }
     
+}
+
+//Reset NSDefaults
+- (void)resetDefaults {
+    NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+    NSDictionary * dict = [defs dictionaryRepresentation];
+    for (id key in dict) {
+        [defs removeObjectForKey:key];
+    }
+    [defs synchronize];
+}
+
+//Clears all open viewControllers.
+-(void)dismissModalStack {
+    UIViewController *vc = self.presentingViewController;
+    while (vc.presentingViewController) {
+        vc = vc.presentingViewController;
+    }
+    [vc dismissViewControllerAnimated:YES completion:NULL];
 }
 
 /*
