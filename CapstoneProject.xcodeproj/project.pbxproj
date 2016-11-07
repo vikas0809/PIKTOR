@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F0B12261DD1076700EF4D8E /* docFoldersCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B12251DD1076700EF4D8E /* docFoldersCollectionViewController.m */; };
+		3F0B12291DD10A6F00EF4D8E /* folderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B12281DD10A6F00EF4D8E /* folderCollectionViewCell.m */; };
 		3F0BD4411DBE6AA700E0D77F /* fbsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD43F1DBE6AA700E0D77F /* fbsmall.png */; };
 		3F0BD4421DBE6AA700E0D77F /* google_signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4401DBE6AA700E0D77F /* google_signin.png */; };
 		3F0BD4461DBE70BA00E0D77F /* facebook-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4431DBE70BA00E0D77F /* facebook-round.png */; };
@@ -77,6 +79,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F0B12241DD1076700EF4D8E /* docFoldersCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = docFoldersCollectionViewController.h; sourceTree = "<group>"; };
+		3F0B12251DD1076700EF4D8E /* docFoldersCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = docFoldersCollectionViewController.m; sourceTree = "<group>"; };
+		3F0B12271DD10A6F00EF4D8E /* folderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = folderCollectionViewCell.h; sourceTree = "<group>"; };
+		3F0B12281DD10A6F00EF4D8E /* folderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = folderCollectionViewCell.m; sourceTree = "<group>"; };
 		3F0BD43F1DBE6AA700E0D77F /* fbsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fbsmall.png; path = ../../../Downloads/fbsmall.png; sourceTree = "<group>"; };
 		3F0BD4401DBE6AA700E0D77F /* google_signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = google_signin.png; path = ../../../Downloads/google_signin.png; sourceTree = "<group>"; };
 		3F0BD4431DBE70BA00E0D77F /* facebook-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook-round.png"; path = "../../../Downloads/facebook-round.png"; sourceTree = "<group>"; };
@@ -216,6 +222,10 @@
 				3F808A131DB6D7090023ABFD /* ProfileViewController.m */,
 				3F808A0D1DB699DD0023ABFD /* documentTabControllerViewController.h */,
 				3F808A0E1DB699DD0023ABFD /* documentTabControllerViewController.m */,
+				3F0B12241DD1076700EF4D8E /* docFoldersCollectionViewController.h */,
+				3F0B12251DD1076700EF4D8E /* docFoldersCollectionViewController.m */,
+				3F0B12271DD10A6F00EF4D8E /* folderCollectionViewCell.h */,
+				3F0B12281DD10A6F00EF4D8E /* folderCollectionViewCell.m */,
 				3F29AED71DB014AA00FD906F /* Assets.xcassets */,
 				3F29AED91DB014AA00FD906F /* LaunchScreen.storyboard */,
 				3F29AEDC1DB014AA00FD906F /* Info.plist */,
@@ -367,11 +377,13 @@
 					};
 					3F29AEE01DB014AA00FD906F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SEBKKE99KG;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3F29AEC71DB014AA00FD906F;
 					};
 					3F29AEEB1DB014AA00FD906F = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = SEBKKE99KG;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 3F29AEC71DB014AA00FD906F;
 					};
@@ -455,12 +467,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F29AED31DB014AA00FD906F /* ViewController.m in Sources */,
+				3F0B12291DD10A6F00EF4D8E /* folderCollectionViewCell.m in Sources */,
 				3F808A0F1DB699DD0023ABFD /* documentTabControllerViewController.m in Sources */,
 				3F29AED01DB014AA00FD906F /* AppDelegate.m in Sources */,
 				3F808A071DB695230023ABFD /* shareTabController.m in Sources */,
 				3F808A141DB6D7090023ABFD /* ProfileViewController.m in Sources */,
 				3F29AECD1DB014AA00FD906F /* main.m in Sources */,
 				3FB4D4C21DC13B59001E5F7B /* RegistrationViewController.m in Sources */,
+				3F0B12261DD1076700EF4D8E /* docFoldersCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +550,9 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator10.0]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -609,6 +625,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = SEBKKE99KG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -620,8 +638,9 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProject;
+				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -629,7 +648,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = SEBKKE99KG;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -640,7 +661,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProject;
+				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -649,6 +670,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SEBKKE99KG;
 				INFOPLIST_FILE = CapstoneProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProjectTests;
@@ -661,6 +684,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = SEBKKE99KG;
 				INFOPLIST_FILE = CapstoneProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProjectTests;
@@ -672,6 +697,7 @@
 		3F29AEFC1DB014AB00FD906F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SEBKKE99KG;
 				INFOPLIST_FILE = CapstoneProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProjectUITests;
@@ -683,6 +709,7 @@
 		3F29AEFD1DB014AB00FD906F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = SEBKKE99KG;
 				INFOPLIST_FILE = CapstoneProjectUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProjectUITests;
@@ -701,7 +728,7 @@
 				3F29AEF41DB014AB00FD906F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3F29AEF51DB014AB00FD906F /* Build configuration list for PBXNativeTarget "CapstoneProject" */ = {
 			isa = XCConfigurationList;
@@ -710,7 +737,7 @@
 				3F29AEF71DB014AB00FD906F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3F29AEF81DB014AB00FD906F /* Build configuration list for PBXNativeTarget "CapstoneProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -719,7 +746,7 @@
 				3F29AEFA1DB014AB00FD906F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		3F29AEFB1DB014AB00FD906F /* Build configuration list for PBXNativeTarget "CapstoneProjectUITests" */ = {
 			isa = XCConfigurationList;
@@ -728,7 +755,7 @@
 				3F29AEFD1DB014AB00FD906F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

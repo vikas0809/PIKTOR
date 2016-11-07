@@ -115,7 +115,30 @@ didSignInForUser:(GIDGoogleUser *)user
                  NSLog(@"Cancelled");
              } else {
                  NSLog(@"Logged in");
-                 [self loggedIn];
+                 
+                 [self getUserDetails : ^{
+                     
+                     NSArray *names = [_fullName componentsSeparatedByString:@" "];
+                     
+                     NSString *post = [NSString stringWithFormat:@"action=%@&emailAddress=%@&facebookID=%@&firstName=%@&lastName=%@", @"doInitCheck",_emailID, _facebookID, [names objectAtIndex:0], [names objectAtIndex:1]];
+                     
+                     NSString *result = [self doConnect: post];
+                     
+                     NSLog(@"result ----------- %@",result);
+                     
+                     
+                     NSData* data = [result dataUsingEncoding:NSUTF8StringEncoding];
+                     NSArray *values = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];  // if you are expecting  the JSON string to be in form of array else use NSDictionary instead
+                     
+                     NSLog(@"error - %@",[values valueForKey:@"error"]);
+                     if([values valueForKey:@"error"] == nil)
+                     {
+                         [self loggedIn];
+                     }
+                     
+                 }];
+                 
+                 
              }
          }];
     }
