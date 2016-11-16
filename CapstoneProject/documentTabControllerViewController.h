@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface documentTabControllerViewController : UIViewController
+@interface documentTabControllerViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
+
+@property (strong, nonatomic) IBOutlet UICollectionView *folderCollecions;
 
 @end

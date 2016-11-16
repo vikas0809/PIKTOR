@@ -7,17 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F0B12261DD1076700EF4D8E /* docFoldersCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B12251DD1076700EF4D8E /* docFoldersCollectionViewController.m */; };
-		3F0B12291DD10A6F00EF4D8E /* folderCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0B12281DD10A6F00EF4D8E /* folderCollectionViewCell.m */; };
 		3F0BD4411DBE6AA700E0D77F /* fbsmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD43F1DBE6AA700E0D77F /* fbsmall.png */; };
 		3F0BD4421DBE6AA700E0D77F /* google_signin.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4401DBE6AA700E0D77F /* google_signin.png */; };
 		3F0BD4461DBE70BA00E0D77F /* facebook-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4431DBE70BA00E0D77F /* facebook-round.png */; };
 		3F0BD4471DBE70BA00E0D77F /* googleplus-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4441DBE70BA00E0D77F /* googleplus-round.png */; };
 		3F0BD4481DBE70BA00E0D77F /* twitter-round.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F0BD4451DBE70BA00E0D77F /* twitter-round.png */; };
+		3F0E5AAE1DDBBB03008873B0 /* TesseractOCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0E5AAD1DDBBB03008873B0 /* TesseractOCR.framework */; };
+		3F0E5AB41DDBBEB9008873B0 /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = 3F0E5AB31DDBBEB9008873B0 /* tessdata */; };
+		3F0E5AB61DDBBF42008873B0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0E5AB51DDBBF42008873B0 /* CoreImage.framework */; };
+		3F0E5AB81DDBBF8E008873B0 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F0E5AB71DDBBF8E008873B0 /* libstdc++.6.0.9.tbd */; };
+		3F154E351DDAB057002E119F /* Menu-Circles.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F154E341DDAB057002E119F /* Menu-Circles.png */; };
+		3F154E391DDAB5BF002E119F /* 27-Edit Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F154E361DDAB5BF002E119F /* 27-Edit Text.png */; };
+		3F154E3A1DDAB5BF002E119F /* Text-Edit-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F154E371DDAB5BF002E119F /* Text-Edit-icon.png */; };
+		3F154E3B1DDAB5BF002E119F /* text-file-5-xxl.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F154E381DDAB5BF002E119F /* text-file-5-xxl.png */; };
+		3F1ADC161DD917BD00A38AEE /* NewDocumentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F1ADC151DD917BD00A38AEE /* NewDocumentViewController.m */; };
+		3F1ADC191DD91E0700A38AEE /* dropbox-vflgpEUVr.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3F1ADC171DD91E0700A38AEE /* dropbox-vflgpEUVr.gif */; };
+		3F1ADC1A1DD91E0700A38AEE /* notebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1ADC181DD91E0700A38AEE /* notebook.png */; };
+		3F1ADC1C1DD91E2100A38AEE /* camera-icon-png-nTXB8LgMc.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F1ADC1B1DD91E2100A38AEE /* camera-icon-png-nTXB8LgMc.png */; };
 		3F29AECD1DB014AA00FD906F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29AECC1DB014AA00FD906F /* main.m */; };
 		3F29AED01DB014AA00FD906F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29AECF1DB014AA00FD906F /* AppDelegate.m */; };
 		3F29AED31DB014AA00FD906F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29AED21DB014AA00FD906F /* ViewController.m */; };
-		3F29AED61DB014AA00FD906F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29AED41DB014AA00FD906F /* Main.storyboard */; };
 		3F29AED81DB014AA00FD906F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F29AED71DB014AA00FD906F /* Assets.xcassets */; };
 		3F29AEDB1DB014AA00FD906F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F29AED91DB014AA00FD906F /* LaunchScreen.storyboard */; };
 		3F29AEE61DB014AA00FD906F /* CapstoneProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F29AEE51DB014AA00FD906F /* CapstoneProjectTests.m */; };
@@ -25,6 +34,8 @@
 		3F808A071DB695230023ABFD /* shareTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F808A061DB695230023ABFD /* shareTabController.m */; };
 		3F808A0F1DB699DD0023ABFD /* documentTabControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F808A0E1DB699DD0023ABFD /* documentTabControllerViewController.m */; };
 		3F808A141DB6D7090023ABFD /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F808A131DB6D7090023ABFD /* ProfileViewController.m */; };
+		3F90DF611DD2855C0046FA14 /* folderContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F90DF601DD2855C0046FA14 /* folderContentViewController.m */; };
+		3F9A96531DD9AEE5003E914E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F9A96511DD9AEE5003E914E /* Main.storyboard */; };
 		3FB4D4C21DC13B59001E5F7B /* RegistrationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FB4D4C11DC13B59001E5F7B /* RegistrationViewController.m */; };
 		3FC3F0A81DB4464200796CF7 /* Circled User Male Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3F0A71DB4464200796CF7 /* Circled User Male Filled-50.png */; };
 		3FC3F0AD1DB447FC00796CF7 /* Clouds-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC3F0A91DB447FC00796CF7 /* Clouds-50.png */; };
@@ -49,6 +60,14 @@
 		3FC757451DC7ADD0003E78D9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757431DC7ADD0003E78D9 /* SystemConfiguration.framework */; };
 		3FC757471DC7AE0C003E78D9 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757461DC7AE0C003E78D9 /* libz.tbd */; };
 		3FC757491DC7AE35003E78D9 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FC757481DC7AE35003E78D9 /* SafariServices.framework */; };
+		3FC9FC4C1DD9348200D8C1A7 /* camera-alt.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9FC441DD9348200D8C1A7 /* camera-alt.png */; };
+		3FC9FC4D1DD9348200D8C1A7 /* camera-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9FC451DD9348200D8C1A7 /* camera-placeholder.png */; };
+		3FC9FC4E1DD9348200D8C1A7 /* doc-14-128-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9FC461DD9348200D8C1A7 /* doc-14-128-2.png */; };
+		3FC9FC4F1DD9348200D8C1A7 /* doc-14-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9FC471DD9348200D8C1A7 /* doc-14-128.png */; };
+		3FC9FC501DD9348200D8C1A7 /* icon_picture.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9FC481DD9348200D8C1A7 /* icon_picture.png */; };
+		3FC9FC511DD9348200D8C1A7 /* Image-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9FC491DD9348200D8C1A7 /* Image-128.png */; };
+		3FC9FC521DD9348200D8C1A7 /* Screenshot Filled-50-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9FC4A1DD9348200D8C1A7 /* Screenshot Filled-50-2.png */; };
+		3FC9FC531DD9348200D8C1A7 /* Screenshot Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FC9FC4B1DD9348200D8C1A7 /* Screenshot Filled-50.png */; };
 		3FE334A81DB535CC00E4C425 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE334A71DB535CC00E4C425 /* FBSDKCoreKit.framework */; };
 		3FE334AA1DB5391B00E4C425 /* Bolts in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE334A91DB5391B00E4C425 /* Bolts */; };
 		3FE334AC1DB5393000E4C425 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE334AB1DB5393000E4C425 /* Bolts.framework */; };
@@ -79,22 +98,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3F0B12241DD1076700EF4D8E /* docFoldersCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = docFoldersCollectionViewController.h; sourceTree = "<group>"; };
-		3F0B12251DD1076700EF4D8E /* docFoldersCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = docFoldersCollectionViewController.m; sourceTree = "<group>"; };
-		3F0B12271DD10A6F00EF4D8E /* folderCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = folderCollectionViewCell.h; sourceTree = "<group>"; };
-		3F0B12281DD10A6F00EF4D8E /* folderCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = folderCollectionViewCell.m; sourceTree = "<group>"; };
 		3F0BD43F1DBE6AA700E0D77F /* fbsmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = fbsmall.png; path = ../../../Downloads/fbsmall.png; sourceTree = "<group>"; };
 		3F0BD4401DBE6AA700E0D77F /* google_signin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = google_signin.png; path = ../../../Downloads/google_signin.png; sourceTree = "<group>"; };
 		3F0BD4431DBE70BA00E0D77F /* facebook-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "facebook-round.png"; path = "../../../Downloads/facebook-round.png"; sourceTree = "<group>"; };
 		3F0BD4441DBE70BA00E0D77F /* googleplus-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "googleplus-round.png"; path = "../../../Downloads/googleplus-round.png"; sourceTree = "<group>"; };
 		3F0BD4451DBE70BA00E0D77F /* twitter-round.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "twitter-round.png"; path = "../../../Downloads/twitter-round.png"; sourceTree = "<group>"; };
+		3F0E5AAD1DDBBB03008873B0 /* TesseractOCR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TesseractOCR.framework; sourceTree = "<group>"; };
+		3F0E5AB31DDBBEB9008873B0 /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; path = tessdata; sourceTree = "<group>"; };
+		3F0E5AB51DDBBF42008873B0 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		3F0E5AB71DDBBF8E008873B0 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		3F154E341DDAB057002E119F /* Menu-Circles.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Menu-Circles.png"; path = "../../../Downloads/Menu-Circles.png"; sourceTree = "<group>"; };
+		3F154E361DDAB5BF002E119F /* 27-Edit Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "27-Edit Text.png"; path = "../../../Downloads/27-Edit Text.png"; sourceTree = "<group>"; };
+		3F154E371DDAB5BF002E119F /* Text-Edit-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Text-Edit-icon.png"; path = "../../../Downloads/Text-Edit-icon.png"; sourceTree = "<group>"; };
+		3F154E381DDAB5BF002E119F /* text-file-5-xxl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "text-file-5-xxl.png"; path = "../../../Downloads/text-file-5-xxl.png"; sourceTree = "<group>"; };
+		3F1ADC141DD9178800A38AEE /* NewDocumentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewDocumentViewController.h; sourceTree = "<group>"; };
+		3F1ADC151DD917BD00A38AEE /* NewDocumentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewDocumentViewController.m; sourceTree = "<group>"; };
+		3F1ADC171DD91E0700A38AEE /* dropbox-vflgpEUVr.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dropbox-vflgpEUVr.gif"; sourceTree = "<group>"; };
+		3F1ADC181DD91E0700A38AEE /* notebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notebook.png; sourceTree = "<group>"; };
+		3F1ADC1B1DD91E2100A38AEE /* camera-icon-png-nTXB8LgMc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-icon-png-nTXB8LgMc.png"; path = "../../../Downloads/camera-icon-png-nTXB8LgMc.png"; sourceTree = "<group>"; };
 		3F29AEC81DB014AA00FD906F /* CapstoneProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CapstoneProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F29AECC1DB014AA00FD906F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3F29AECE1DB014AA00FD906F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3F29AECF1DB014AA00FD906F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3F29AED11DB014AA00FD906F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3F29AED21DB014AA00FD906F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3F29AED51DB014AA00FD906F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F29AED71DB014AA00FD906F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F29AEDA1DB014AA00FD906F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F29AEDC1DB014AA00FD906F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,6 +137,9 @@
 		3F808A0E1DB699DD0023ABFD /* documentTabControllerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = documentTabControllerViewController.m; sourceTree = "<group>"; };
 		3F808A121DB6D7090023ABFD /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		3F808A131DB6D7090023ABFD /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		3F90DF5F1DD2855C0046FA14 /* folderContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = folderContentViewController.h; sourceTree = "<group>"; };
+		3F90DF601DD2855C0046FA14 /* folderContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = folderContentViewController.m; sourceTree = "<group>"; };
+		3F9A96521DD9AEE5003E914E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FB4D4C01DC13B59001E5F7B /* RegistrationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationViewController.h; sourceTree = "<group>"; };
 		3FB4D4C11DC13B59001E5F7B /* RegistrationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationViewController.m; sourceTree = "<group>"; };
 		3FC3F0A71DB4464200796CF7 /* Circled User Male Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Circled User Male Filled-50.png"; path = "../../../Downloads/Circled User Male Filled-50.png"; sourceTree = "<group>"; };
@@ -135,6 +165,14 @@
 		3FC757431DC7ADD0003E78D9 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		3FC757461DC7AE0C003E78D9 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		3FC757481DC7AE35003E78D9 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		3FC9FC441DD9348200D8C1A7 /* camera-alt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-alt.png"; path = "../../../Downloads/camera-alt.png"; sourceTree = "<group>"; };
+		3FC9FC451DD9348200D8C1A7 /* camera-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "camera-placeholder.png"; path = "../../../Downloads/camera-placeholder.png"; sourceTree = "<group>"; };
+		3FC9FC461DD9348200D8C1A7 /* doc-14-128-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "doc-14-128-2.png"; path = "../../../Downloads/doc-14-128-2.png"; sourceTree = "<group>"; };
+		3FC9FC471DD9348200D8C1A7 /* doc-14-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "doc-14-128.png"; path = "../../../Downloads/doc-14-128.png"; sourceTree = "<group>"; };
+		3FC9FC481DD9348200D8C1A7 /* icon_picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_picture.png; path = ../../../Downloads/icon_picture.png; sourceTree = "<group>"; };
+		3FC9FC491DD9348200D8C1A7 /* Image-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Image-128.png"; path = "../../../Downloads/Image-128.png"; sourceTree = "<group>"; };
+		3FC9FC4A1DD9348200D8C1A7 /* Screenshot Filled-50-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot Filled-50-2.png"; path = "../../../Downloads/Screenshot Filled-50-2.png"; sourceTree = "<group>"; };
+		3FC9FC4B1DD9348200D8C1A7 /* Screenshot Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Screenshot Filled-50.png"; path = "../../../Downloads/Screenshot Filled-50.png"; sourceTree = "<group>"; };
 		3FE334A71DB535CC00E4C425 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		3FE334A91DB5391B00E4C425 /* Bolts */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Bolts; sourceTree = "<group>"; };
 		3FE334AB1DB5393000E4C425 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
@@ -152,8 +190,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0E5AB81DDBBF8E008873B0 /* libstdc++.6.0.9.tbd in Frameworks */,
+				3F0E5AB61DDBBF42008873B0 /* CoreImage.framework in Frameworks */,
 				3FC757491DC7AE35003E78D9 /* SafariServices.framework in Frameworks */,
 				3FC757471DC7AE0C003E78D9 /* libz.tbd in Frameworks */,
+				3F0E5AAE1DDBBB03008873B0 /* TesseractOCR.framework in Frameworks */,
 				3FC757441DC7ADD0003E78D9 /* StoreKit.framework in Frameworks */,
 				3FC757451DC7ADD0003E78D9 /* SystemConfiguration.framework in Frameworks */,
 				3FC757411DC7ADB3003E78D9 /* AddressBook.framework in Frameworks */,
@@ -209,23 +250,23 @@
 		3F29AECA1DB014AA00FD906F /* CapstoneProject */ = {
 			isa = PBXGroup;
 			children = (
+				3F1ADC151DD917BD00A38AEE /* NewDocumentViewController.m */,
+				3F1ADC141DD9178800A38AEE /* NewDocumentViewController.h */,
 				3F29AECE1DB014AA00FD906F /* AppDelegate.h */,
 				3F29AECF1DB014AA00FD906F /* AppDelegate.m */,
 				3F29AED11DB014AA00FD906F /* ViewController.h */,
+				3F9A96511DD9AEE5003E914E /* Main.storyboard */,
 				3F29AED21DB014AA00FD906F /* ViewController.m */,
 				3F808A061DB695230023ABFD /* shareTabController.m */,
 				3F808A081DB695400023ABFD /* shareTabController.h */,
-				3F29AED41DB014AA00FD906F /* Main.storyboard */,
 				3FB4D4C01DC13B59001E5F7B /* RegistrationViewController.h */,
 				3FB4D4C11DC13B59001E5F7B /* RegistrationViewController.m */,
 				3F808A121DB6D7090023ABFD /* ProfileViewController.h */,
 				3F808A131DB6D7090023ABFD /* ProfileViewController.m */,
 				3F808A0D1DB699DD0023ABFD /* documentTabControllerViewController.h */,
 				3F808A0E1DB699DD0023ABFD /* documentTabControllerViewController.m */,
-				3F0B12241DD1076700EF4D8E /* docFoldersCollectionViewController.h */,
-				3F0B12251DD1076700EF4D8E /* docFoldersCollectionViewController.m */,
-				3F0B12271DD10A6F00EF4D8E /* folderCollectionViewCell.h */,
-				3F0B12281DD10A6F00EF4D8E /* folderCollectionViewCell.m */,
+				3F90DF5F1DD2855C0046FA14 /* folderContentViewController.h */,
+				3F90DF601DD2855C0046FA14 /* folderContentViewController.m */,
 				3F29AED71DB014AA00FD906F /* Assets.xcassets */,
 				3F29AED91DB014AA00FD906F /* LaunchScreen.storyboard */,
 				3F29AEDC1DB014AA00FD906F /* Info.plist */,
@@ -237,6 +278,22 @@
 		3F29AECB1DB014AA00FD906F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3F0E5AB31DDBBEB9008873B0 /* tessdata */,
+				3F154E361DDAB5BF002E119F /* 27-Edit Text.png */,
+				3F154E371DDAB5BF002E119F /* Text-Edit-icon.png */,
+				3F154E381DDAB5BF002E119F /* text-file-5-xxl.png */,
+				3F154E341DDAB057002E119F /* Menu-Circles.png */,
+				3FC9FC441DD9348200D8C1A7 /* camera-alt.png */,
+				3FC9FC451DD9348200D8C1A7 /* camera-placeholder.png */,
+				3FC9FC461DD9348200D8C1A7 /* doc-14-128-2.png */,
+				3FC9FC471DD9348200D8C1A7 /* doc-14-128.png */,
+				3FC9FC481DD9348200D8C1A7 /* icon_picture.png */,
+				3FC9FC491DD9348200D8C1A7 /* Image-128.png */,
+				3FC9FC4A1DD9348200D8C1A7 /* Screenshot Filled-50-2.png */,
+				3FC9FC4B1DD9348200D8C1A7 /* Screenshot Filled-50.png */,
+				3F1ADC1B1DD91E2100A38AEE /* camera-icon-png-nTXB8LgMc.png */,
+				3F1ADC171DD91E0700A38AEE /* dropbox-vflgpEUVr.gif */,
+				3F1ADC181DD91E0700A38AEE /* notebook.png */,
 				3F0BD4431DBE70BA00E0D77F /* facebook-round.png */,
 				3F0BD4441DBE70BA00E0D77F /* googleplus-round.png */,
 				3F0BD4451DBE70BA00E0D77F /* twitter-round.png */,
@@ -287,6 +344,9 @@
 		3FE3349C1DB5312800E4C425 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3F0E5AB71DDBBF8E008873B0 /* libstdc++.6.0.9.tbd */,
+				3F0E5AB51DDBBF42008873B0 /* CoreImage.framework */,
+				3F0E5AAD1DDBBB03008873B0 /* TesseractOCR.framework */,
 				3FC757481DC7AE35003E78D9 /* SafariServices.framework */,
 				3FC757461DC7AE0C003E78D9 /* libz.tbd */,
 				3FC757421DC7ADD0003E78D9 /* StoreKit.framework */,
@@ -372,8 +432,7 @@
 				TargetAttributes = {
 					3F29AEC71DB014AA00FD906F = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = SEBKKE99KG;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					3F29AEE01DB014AA00FD906F = {
 						CreatedOnToolsVersion = 8.0;
@@ -415,31 +474,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FFEEEBC1DB94AF600C30C41 /* facebook-sign-in-button-png-26.png in Resources */,
+				3F154E3A1DDAB5BF002E119F /* Text-Edit-icon.png in Resources */,
 				3FC3F0AF1DB447FC00796CF7 /* Settings Filled-50.png in Resources */,
 				3FC3F0A81DB4464200796CF7 /* Circled User Male Filled-50.png in Resources */,
 				3F29AEDB1DB014AA00FD906F /* LaunchScreen.storyboard in Resources */,
+				3F1ADC1C1DD91E2100A38AEE /* camera-icon-png-nTXB8LgMc.png in Resources */,
+				3FC9FC531DD9348200D8C1A7 /* Screenshot Filled-50.png in Resources */,
 				3FC3F0AE1DB447FC00796CF7 /* Download From Cloud-50.png in Resources */,
 				3FC3F0BC1DB44BF200796CF7 /* Add Folder-96.png in Resources */,
 				3FC3F0C21DB44E0A00796CF7 /* Pictures Folder-96.png in Resources */,
+				3FC9FC4E1DD9348200D8C1A7 /* doc-14-128-2.png in Resources */,
 				3FC3F0C71DB4521600796CF7 /* Screenshot-40.png in Resources */,
 				3F0BD4421DBE6AA700E0D77F /* google_signin.png in Resources */,
 				3F29AED81DB014AA00FD906F /* Assets.xcassets in Resources */,
 				3FC3F0CA1DB4529E00796CF7 /* Share-35.png in Resources */,
+				3F154E391DDAB5BF002E119F /* 27-Edit Text.png in Resources */,
 				3FC3F0C41DB4515E00796CF7 /* Add Folder-40.png in Resources */,
 				3FC7573C1DC7AD19003E78D9 /* GoogleSignIn.bundle in Resources */,
+				3FC9FC501DD9348200D8C1A7 /* icon_picture.png in Resources */,
 				3FE632EB1DB3524400686293 /* user-photo.png in Resources */,
+				3F154E351DDAB057002E119F /* Menu-Circles.png in Resources */,
 				3FC3F0BA1DB44BF200796CF7 /* Add Folder-48.png in Resources */,
+				3FC9FC511DD9348200D8C1A7 /* Image-128.png in Resources */,
 				3FE632E31DB315E300686293 /* eureka.jpg in Resources */,
 				3F0BD4471DBE70BA00E0D77F /* googleplus-round.png in Resources */,
+				3F0E5AB41DDBBEB9008873B0 /* tessdata in Resources */,
 				3F0BD4461DBE70BA00E0D77F /* facebook-round.png in Resources */,
+				3FC9FC521DD9348200D8C1A7 /* Screenshot Filled-50-2.png in Resources */,
 				3F0BD4481DBE70BA00E0D77F /* twitter-round.png in Resources */,
+				3FC9FC4F1DD9348200D8C1A7 /* doc-14-128.png in Resources */,
 				3FC3F0C01DB44E0A00796CF7 /* Folder-96.png in Resources */,
 				3FC3F0AD1DB447FC00796CF7 /* Clouds-50.png in Resources */,
 				3FC3F0C11DB44E0A00796CF7 /* Open Folder-96.png in Resources */,
 				3FE632E41DB315E300686293 /* projectwrite.png in Resources */,
+				3FC9FC4C1DD9348200D8C1A7 /* camera-alt.png in Resources */,
 				3F0BD4411DBE6AA700E0D77F /* fbsmall.png in Resources */,
+				3F1ADC1A1DD91E0700A38AEE /* notebook.png in Resources */,
+				3F9A96531DD9AEE5003E914E /* Main.storyboard in Resources */,
 				3FC3F0B01DB447FC00796CF7 /* Upload to Cloud-50.png in Resources */,
-				3F29AED61DB014AA00FD906F /* Main.storyboard in Resources */,
+				3F1ADC191DD91E0700A38AEE /* dropbox-vflgpEUVr.gif in Resources */,
+				3F154E3B1DDAB5BF002E119F /* text-file-5-xxl.png in Resources */,
+				3FC9FC4D1DD9348200D8C1A7 /* camera-placeholder.png in Resources */,
 				3FE632E51DB315E300686293 /* writing-1.gif in Resources */,
 				3FE632E91DB32B3100686293 /* loginfb.png in Resources */,
 			);
@@ -466,15 +541,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F90DF611DD2855C0046FA14 /* folderContentViewController.m in Sources */,
 				3F29AED31DB014AA00FD906F /* ViewController.m in Sources */,
-				3F0B12291DD10A6F00EF4D8E /* folderCollectionViewCell.m in Sources */,
 				3F808A0F1DB699DD0023ABFD /* documentTabControllerViewController.m in Sources */,
 				3F29AED01DB014AA00FD906F /* AppDelegate.m in Sources */,
 				3F808A071DB695230023ABFD /* shareTabController.m in Sources */,
+				3F1ADC161DD917BD00A38AEE /* NewDocumentViewController.m in Sources */,
 				3F808A141DB6D7090023ABFD /* ProfileViewController.m in Sources */,
 				3F29AECD1DB014AA00FD906F /* main.m in Sources */,
 				3FB4D4C21DC13B59001E5F7B /* RegistrationViewController.m in Sources */,
-				3F0B12261DD1076700EF4D8E /* docFoldersCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,20 +585,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3F29AED41DB014AA00FD906F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F29AED51DB014AA00FD906F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F29AED91DB014AA00FD906F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3F29AEDA1DB014AA00FD906F /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3F9A96511DD9AEE5003E914E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3F9A96521DD9AEE5003E914E /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -625,29 +700,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = SEBKKE99KG;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				INFOPLIST_FILE = CapstoneProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProjectUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-			};
-			name = Debug;
-		};
-		3F29AEF71DB014AB00FD906F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
@@ -661,7 +714,35 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Conestoga.CapstoneProjectUITests;
+				OTHER_LDFLAGS = "-lstdc++";
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conestoga.Capstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		3F29AEF71DB014AB00FD906F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = CapstoneProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "-lstdc++";
+				"OTHER_LDFLAGS[arch=*]" = "-lstdc++";
+				PRODUCT_BUNDLE_IDENTIFIER = com.conestoga.Capstone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

@@ -106,4 +106,6 @@ ViewController *mV;
  }
  */
 
+- (IBAction)CancelBtn:(id)sender {    [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
+}
 @end

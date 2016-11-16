@@ -24,5 +24,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *email;
 
 @property (weak, nonatomic) NSString *userID;
+- (IBAction)CancelBtn:(id)sender;
 
 @end
